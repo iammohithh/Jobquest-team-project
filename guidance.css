@@ -1,0 +1,283 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #929fa0;
+    color: #111;
+}
+
+/* =====================================================
+   GUIDANCE
+===================================================== */
+
+.guidance {
+    background: #202c2d;
+
+    color: #fff;
+
+    padding: 60px 55px 70px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.guidance::before {
+    content: "";
+
+    position: absolute;
+
+    top: -80px;
+    right: -80px;
+
+    width: 230px;
+    height: 230px;
+
+    border: 1px solid rgba(255,255,255,.05);
+
+    border-radius: 50%;
+}
+
+
+.guidance-heading {
+    text-align: center;
+
+    max-width: 520px;
+
+    margin: 0 auto 40px;
+}
+
+
+.guidance-heading h2 {
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+
+
+.guidance-heading p {
+    font-size: 9px;
+
+    line-height: 1.7;
+
+    color: #aeb7b7;
+}
+
+
+.guidance-content {
+    display: grid;
+
+    grid-template-columns: 1fr 230px 1fr;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.guidance-card h3 {
+    font-size: 13px;
+
+    margin-bottom: 12px;
+}
+
+
+.guidance-card p {
+    font-size: 9px;
+
+    line-height: 1.7;
+
+    color: #aeb7b7;
+}
+
+
+.expert-image {
+    display: flex;
+
+    justify-content: center;
+}
+
+
+.expert-image img {
+    width: 200px;
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 8px solid #fff;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    background: #202c2d;
+
+    color: #fff;
+
+    padding: 45px 55px;
+
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1fr 2fr;
+
+    gap: 35px;
+}
+
+
+.footer-logo {
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+.footer h4 {
+    font-size: 10px;
+
+    margin-bottom: 5px;
+}
+
+
+.footer-column a {
+    color: #9fa8a8;
+
+    text-decoration: none;
+
+    font-size: 8px;
+}
+
+
+.newsletter p {
+    font-size: 8px;
+
+    color: #9fa8a8;
+
+    margin-bottom: 10px;
+}
+
+
+.subscribe {
+    height: 34px;
+
+    display: flex;
+
+    background: #fff;
+
+    border-radius: 18px;
+
+    padding: 3px;
+}
+
+
+.subscribe input {
+    flex: 1;
+
+    min-width: 0;
+
+    border: none;
+
+    outline: none;
+
+    padding: 0 10px;
+
+    font-size: 8px;
+}
+
+
+.subscribe button {
+    border: none;
+
+    background: #202c2d;
+
+    color: #fff;
+
+    border-radius: 15px;
+
+    padding: 0 12px;
+
+    font-size: 7px;
+}
+
+/* =====================================================
+   RESPONSIVE RULES USED BY GUIDANCE
+===================================================== */
+
+@media (max-width: 800px) {
+    .guidance {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .guidance-content {
+        grid-template-columns: 1fr 180px 1fr;
+    }
+
+    .expert-image img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 600px) {
+    .guidance {
+        padding: 45px 20px;
+    }
+
+    .guidance-heading h2 {
+        font-size: 24px;
+    }
+
+    .guidance-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .expert-image {
+        order: -1;
+    }
+
+    .expert-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .footer {
+        padding: 40px 20px;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .footer-logo {
+        grid-column: 1 / -1;
+    }
+
+    .newsletter {
+        grid-column: 1 / -1;
+    }
+}
