@@ -1,6 +1,223 @@
-*{box-sizing:border-box}html,body{margin:0;padding:0;min-height:100%;background:#929fa0;}body{font-family:Arial,sans-serif;overflow-x:auto}.stage{position:relative;width:1199px;min-height:1700px;margin:0 auto;background:#929fa0;overflow:visible}.back-page,.front-page{position:absolute;background:#fff;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,.10)}.back-page{left:627px;top:0;width:444px;z-index:1}.front-page{left:128px;top:293px;width:582px;z-index:5;border-radius:7px 7px 0 0}.back-page iframe,.front-page iframe{position:absolute;left:0;top:0;display:block;width:1199px;border:0;margin:0;padding:0;transform-origin:top left;background:#fff}
-.back-hero,.front-hero{height:675px}.back-explore,.front-explore{height:650px}.back-companies,.front-companies{height:630px}.back-guidance{height:900px}.front-guidance{height:1080px}.back-featured{height:520px}.back-footer{height:340px}
-.back-page .back-hero{transform:scale(.370309);top:0}.back-page .back-explore{transform:scale(.370309);top:250px}.back-page .back-companies{transform:scale(.370309);top:491px}.back-page .back-guidance{transform:scale(.370309);top:724px}.back-page .back-featured{transform:scale(.370309);top:1058px}.back-page .back-footer{transform:scale(.370309);top:1251px}
-.front-page .front-hero{transform:scale(.485404);top:0}.front-page .front-explore{transform:scale(.485404);top:328px}.front-page .front-companies{transform:scale(.485404);top:644px}.front-page .front-guidance{transform:scale(.485404);top:950px}
-.back-page{height:1600px}.front-page{height:1475px}
-@media(max-width:1200px){.stage{margin-left:0;margin-right:0}}
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: #929fa0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: auto;
+}
+
+.stage {
+    position: relative;
+    width: 1199px;
+    min-height: 1700px;
+    margin: 0 auto;
+    background: #929fa0;
+    overflow: visible;
+}
+
+
+/* =====================================================
+   PAGE CONTAINERS
+===================================================== */
+
+.back-page,
+.front-page {
+    position: absolute;
+    background: transparent;
+    overflow: visible;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .10);
+}
+
+.back-page {
+    left: 627px;
+    top: 0;
+    width: 444px;
+    z-index: 1;
+}
+
+.front-page {
+    left: 128px;
+    top: 293px;
+    width: 582px;
+    z-index: 5;
+    border-radius: 7px 7px 0 0;
+}
+
+
+/* =====================================================
+   COMMON IFRAME SETTINGS
+===================================================== */
+
+.back-page iframe,
+.front-page iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: block;
+
+    width: 1199px;
+
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    transform-origin: top left;
+
+    background: transparent;
+}
+
+
+/* =====================================================
+   BACK PAGE SECTION HEIGHTS
+===================================================== */
+
+.back-hero {
+    height: 675px;
+}
+
+.back-explore {
+    height: 650px;
+}
+
+.back-companies {
+    height: 630px;
+}
+
+.back-guidance {
+    height: 430px;
+}
+
+.back-featured {
+    height: 520px;
+}
+
+.back-footer {
+    height: 340px;
+
+
+/* =====================================================
+   FRONT PAGE SECTION HEIGHTS
+===================================================== */
+
+.front-hero {
+    height: 675px;
+}
+
+.front-explore {
+    height: 650px;
+}
+
+.front-companies {
+    height: 630px;
+}
+
+.front-guidance {
+    height: 430px;
+}
+
+
+/* =====================================================
+   BACK PAGE POSITIONING
+===================================================== */
+
+.back-page .back-hero {
+    transform: scale(.370309);
+    top: 0;
+}
+
+.back-page .back-explore {
+    transform: scale(.370309);
+    top: 250px;
+}
+
+.back-page .back-companies {
+    transform: scale(.370309);
+    top: 491px;
+}
+
+/* Guidance starts immediately after companies */
+.back-page .back-guidance {
+    transform: scale(.370309);
+    top: 724px;
+}
+
+/* Featured starts immediately after guidance */
+.back-page .back-featured {
+    transform: scale(.370309);
+    top: 883px;
+}
+
+/* Footer starts immediately after featured */
+.back-page .back-footer {
+    transform: scale(.370309);
+    top: 1075px;
+}
+
+
+/* =====================================================
+   FRONT PAGE POSITIONING
+===================================================== */
+
+.front-page .front-hero {
+    transform: scale(.485404);
+    top: 0;
+}
+
+.front-page .front-explore {
+    transform: scale(.485404);
+    top: 328px;
+}
+
+.front-page .front-companies {
+    transform: scale(.485404);
+    top: 644px;
+}
+
+.front-page .front-guidance {
+    transform: scale(.485404);
+    top: 950px;
+}
+
+
+/* =====================================================
+   PAGE HEIGHTS
+===================================================== */
+
+/* Back page:
+   Guidance: 724px → 883px
+   Featured: 883px → 1075px
+   Footer:   1075px → ~1201px
+*/
+
+.back-page {
+    height: 1201px;
+}
+
+/* Front page */
+.front-page {
+    height: 1159px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1200px) {
+
+    .stage {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
