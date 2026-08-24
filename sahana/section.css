@@ -1,0 +1,209 @@
+/* =========================
+   EXPLORE CAREER SECTION
+========================= */
+
+.explore-career {
+    padding: 70px 5% 80px;
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.explore-heading {
+    max-width: 650px;
+    margin-bottom: 50px;
+}
+
+.explore-heading h2 {
+    font-size: 42px;
+    line-height: 1.05;
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: #000;
+}
+
+.explore-heading p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #8a9498;
+    margin: 0;
+}
+
+
+/* =========================
+   CAREER CARDS
+========================= */
+
+.career-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 95px;
+}
+
+.career-card {
+    height: 160px;
+    border: 2px solid #e3e5e5;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+.career-card:hover {
+    background-color: #344345;
+    color: white;
+    border-color: #344345;
+    transform: scale(1.07);
+}
+
+.career-card h3 {
+    font-size: 16px;
+    margin: 20px 0 10px;
+}
+
+.career-card p {
+    font-size: 12px;
+    color: #8a9498;
+    margin: 0;
+}
+
+.career-card:hover p {
+    color: white;
+}
+
+
+/* =========================
+   TRUSTED COMPANIES
+========================= */
+
+.companies {
+    position: relative;
+    background-color: #2f3d3f;
+    height: 100px;
+    padding: 30px 45px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*
+       ONLY TWO SLANTS:
+       1. Top-left
+       2. Bottom-right
+    */
+    clip-path: polygon( 2% 0, 100% 0, 100% 80%, 98% 100%, 0 100%, 0 20%);
+}
+
+
+/* =========================
+   TRUSTED BY TEXT
+========================= */
+
+.companies::before {
+    content: "Trusted by the best companies";
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 9px;
+    font-weight: 400;
+    color: #aeb8b9;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   COMPANY
+========================= */
+
+.company {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+/* =========================
+   COMPANY LOGO
+========================= */
+
+.company-logo {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* =========================
+   COMPANY NAME
+========================= */
+
+.company span {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   RESPONSIVE - TABLET
+========================= */
+
+@media (max-width: 900px) {
+    .career-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .explore-heading h2 {
+        font-size: 36px;
+    }
+    .companies {
+        padding-left: 25px;
+        padding-right: 35px;
+    }
+    .company-logo {
+        width: 23px;
+        height: 23px;
+    }
+    .company span {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE - MOBILE
+========================= */
+
+@media (max-width: 600px) {
+    .explore-career {
+        padding: 50px 6%;
+    }
+    .explore-heading h2 {
+        font-size: 30px;
+    }
+    .career-cards {
+        grid-template-columns: 1fr;
+    }
+    .companies {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+        clip-path: none;
+        padding: 45px 25px 25px;
+    }
+    .companies::before {
+        top: 15px;
+    }
+    .company-logo {
+        width: 28px;
+        height: 28px;
+    }
+    .company span {
+        font-size: 18px;
+    }
+}
