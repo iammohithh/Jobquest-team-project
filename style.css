@@ -1,0 +1,1230 @@
+/* =========================================================
+   JOBQUEST - SINGLE STATIC PAGE
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    background: #ffffff;
+}
+
+.jobquest-page {
+    width: 100%;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.jq-hero,
+.jq-sahana,
+.jq-bharath,
+.jq-mohith,
+.jq-aishwarya {
+    width: 100%;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   HERO - hero-section
+========================================================= */
+
+.jq-hero * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jq-hero .navbar {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3%;
+    background-color: #202b2b;
+    color: white;
+}
+
+.jq-hero .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+.jq-hero .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.jq-hero nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.jq-hero nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.jq-hero nav a:hover {
+    color: #a9b9af;
+}
+
+.jq-hero .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.jq-hero .search-btn {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jq-hero .search-btn:hover {
+    background-color: #dfe7e3;
+}
+
+.jq-hero .apply-btn {
+    padding: 11px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: #202b2b;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.jq-hero .apply-btn:hover {
+    transform: translateY(-3px);
+    background-color: #6d8378;
+    color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.jq-hero .apply-btn:active {
+    transform: translateY(1px) scale(0.97);
+}
+
+.jq-hero .hero {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+    background-color: #202b2b;
+    color: white;
+    overflow: hidden;
+}
+
+.jq-hero .hero-content {
+    width: 50%;
+    max-width: 600px;
+}
+
+.jq-hero .small-text {
+    color: #dfe2e1;
+    font-size: 14px;
+    margin-bottom: 10%;
+}
+
+.jq-hero .hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+
+.jq-hero .lines {
+    width: 390px;
+    height: 70px;
+    display: block;
+    margin-top: -2px;
+    margin-bottom: 22px;
+}
+
+.jq-hero .hero-description {
+    max-width: 520px;
+    color: #c3cdca;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.jq-hero .email-box {
+    width: 430px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px;
+    margin-bottom: 6%;
+}
+
+.jq-hero .email-box input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    padding: 0 18px;
+    font-size: 14px;
+    border-radius: 30px;
+}
+
+.jq-hero .email-box button {
+    height: 45px;
+    padding: 0 22px;
+    border: none;
+    border-radius: 25px;
+    background-color: #6d8378;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.jq-hero .email-box button:hover {
+    background-color: #566b61;
+}
+
+.jq-hero .members {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.jq-hero .p-images {
+    display: flex;
+    align-items: center;
+}
+
+.jq-hero .p-images img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-left: -7px;
+}
+
+.jq-hero .rating {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.jq-hero .stars {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.jq-hero .rating p,
+.jq-hero .members p {
+    color: #c3cdca;
+    font-size: 13px;
+}
+
+.jq-hero .hero-image {
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.jq-hero .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 900px) {
+    .jq-hero .navbar {
+        padding: 4%;
+    }
+
+    .jq-hero nav {
+        gap: 15px;
+    }
+
+    .jq-hero .hero {
+        padding: 60px 5%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .jq-hero .hero-content {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .jq-hero .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .jq-hero .lines {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .jq-hero .email-box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .jq-hero .members {
+        justify-content: center;
+    }
+
+    .jq-hero .hero-image {
+        width: 80%;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .jq-hero .navbar {
+        height: auto;
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .jq-hero nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .jq-hero .nav-right {
+        margin-left: auto;
+    }
+
+    .jq-hero .hero h1 {
+        font-size: 40px;
+    }
+
+    .jq-hero .lines {
+        width: 100%;
+    }
+
+    .jq-hero .email-box {
+        width: 100%;
+    }
+
+    .jq-hero .hero-image {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   EXPLORE - sahana
+========================================================= */
+
+.jq-sahana * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jq-sahana .explore-career {
+    padding: 70px 5% 80px;
+    background-color: #ffffff;
+}
+
+.jq-sahana .explore-heading {
+    max-width: 650px;
+    margin-bottom: 50px;
+}
+
+.jq-sahana .explore-heading h2 {
+    font-size: 42px;
+    line-height: 1.05;
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: #000;
+}
+
+.jq-sahana .explore-heading p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #8a9498;
+    margin: 0;
+}
+
+.jq-sahana .career-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 95px;
+}
+
+.jq-sahana .career-card {
+    height: 160px;
+    border: 2px solid #e3e5e5;
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+.jq-sahana .career-card:hover {
+    background-color: #344345;
+    color: white;
+    border-color: #344345;
+    transform: scale(1.07);
+}
+
+.jq-sahana .career-card h3 {
+    font-size: 16px;
+    margin: 20px 0 10px;
+}
+
+.jq-sahana .career-card p {
+    font-size: 12px;
+    color: #8a9498;
+    margin: 0;
+}
+
+.jq-sahana .career-card:hover p {
+    color: white;
+}
+
+.jq-sahana .companies {
+    position: relative;
+    background-color: #2f3d3f;
+    height: 100px;
+    padding: 30px 45px 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    clip-path: polygon(
+        2% 0,
+        100% 0,
+        100% 80%,
+        98% 100%,
+        0 100%,
+        0 20%
+    );
+}
+
+.jq-sahana .companies::before {
+    content: "Trusted by the best companies";
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 9px;
+    font-weight: 400;
+    color: #aeb8b9;
+    white-space: nowrap;
+}
+
+.jq-sahana .company {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.jq-sahana .company-logo {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    display: block;
+}
+
+.jq-sahana .company span {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .jq-sahana .career-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jq-sahana .explore-heading h2 {
+        font-size: 36px;
+    }
+
+    .jq-sahana .companies {
+        padding-left: 25px;
+        padding-right: 35px;
+    }
+
+    .jq-sahana .company-logo {
+        width: 23px;
+        height: 23px;
+    }
+
+    .jq-sahana .company span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .jq-sahana .explore-career {
+        padding: 50px 6%;
+    }
+
+    .jq-sahana .explore-heading h2 {
+        font-size: 30px;
+    }
+
+    .jq-sahana .career-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .jq-sahana .companies {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+        clip-path: none;
+        padding: 45px 25px 25px;
+    }
+
+    .jq-sahana .companies::before {
+        top: 15px;
+    }
+
+    .jq-sahana .company-logo {
+        width: 28px;
+        height: 28px;
+    }
+
+    .jq-sahana .company span {
+        font-size: 18px;
+    }
+}
+
+
+/* =========================================================
+   COMPANIES / RECRUITMENT - bharath
+========================================================= */
+
+.jq-bharath * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jq-bharath .page {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.jq-bharath .trusted {
+    width: calc(100% - 17.5%);
+    height: 185px;
+    margin: 64px auto 0;
+    background: #293536;
+    position: relative;
+    color: white;
+    clip-path: polygon(
+        5.2% 0,
+        100% 0,
+        100% 68%,
+        96.2% 100%,
+        0 100%,
+        0 24%
+    );
+}
+
+.jq-bharath .trusted-inner {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.jq-bharath .trusted-title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    margin-bottom: 19px;
+    opacity: 0.9;
+}
+
+.jq-bharath .logos {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.jq-bharath .logo {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+.jq-bharath .apple-logo {
+    font-size: 34px;
+    font-weight: 400;
+    gap: 10px;
+}
+
+.jq-bharath .apple-symbol {
+    width: 31px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 37px;
+    position: relative;
+}
+
+.jq-bharath .apple-symbol::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: #fff;
+    border-radius: 100% 0;
+    top: 0;
+    right: 2px;
+    transform: rotate(-25deg);
+}
+
+.jq-bharath .att-logo {
+    font-size: 27px;
+    font-weight: 600;
+    gap: 9px;
+}
+
+.jq-bharath .att-symbol {
+    font-size: 39px;
+    font-weight: 400;
+}
+
+.jq-bharath .meta-logo {
+    font-size: 31px;
+    font-weight: 500;
+    gap: 7px;
+}
+
+.jq-bharath .meta-symbol {
+    font-size: 45px;
+    font-weight: 400;
+    transform: translateY(-2px);
+}
+
+.jq-bharath .mcd-logo {
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: -1.2px;
+}
+
+.jq-bharath .sony-logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 31px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.jq-bharath .hero {
+    width: calc(100% - 17.5%);
+    margin: 70px auto 0;
+    display: grid;
+    grid-template-columns: 52% 48%;
+    align-items: center;
+    min-height: 560px;
+}
+
+.jq-bharath .hero-content {
+    padding-left: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.jq-bharath .hero h1 {
+    font-size: clamp(43px, 3.15vw, 58px);
+    line-height: 1.02;
+    letter-spacing: -2.6px;
+    font-weight: 700;
+    margin-bottom: 31px;
+}
+
+.jq-bharath .description {
+    color: #424242;
+    font-size: 17px;
+    line-height: 1.65;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    margin-bottom: 39px;
+}
+
+.jq-bharath .features {
+    display: grid;
+    grid-template-columns: 180px 235px;
+    column-gap: 30px;
+    row-gap: 21px;
+    margin-bottom: 39px;
+}
+
+.jq-bharath .feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #363636;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+.jq-bharath .check {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #293536;
+    color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    flex: 0 0 23px;
+}
+
+.jq-bharath .post-btn {
+    width: 193px;
+    height: 54px;
+    border: 0;
+    border-radius: 30px;
+    background: #293536;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.jq-bharath .post-btn:hover {
+    transform: translateY(-2px);
+    background: #1f292a;
+}
+
+.jq-bharath .hero-visual {
+    height: 580px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.jq-bharath .hero-visual img {
+    width: min(100%, 680px);
+    height: auto;
+    object-fit: contain;
+    display: block;
+    transform: translate(15px, 0);
+}
+
+@media (max-width: 1100px) {
+    .jq-bharath .trusted,
+    .jq-bharath .hero {
+        width: calc(100% - 10%);
+    }
+
+    .jq-bharath .trusted-inner {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .jq-bharath .logos {
+        gap: 25px;
+    }
+
+    .jq-bharath .logo {
+        transform: scale(0.88);
+    }
+
+    .jq-bharath .hero {
+        grid-template-columns: 50% 50%;
+        margin-top: 75px;
+    }
+
+    .jq-bharath .description {
+        font-size: 15px;
+    }
+
+    .jq-bharath .description br {
+        display: none;
+    }
+
+    .jq-bharath .hero-visual img {
+        transform: translate(0, 0);
+    }
+}
+
+@media (max-width: 800px) {
+    .jq-bharath .trusted {
+        height: auto;
+        min-height: 180px;
+        margin-top: 25px;
+        clip-path: polygon(
+            7% 0,
+            100% 0,
+            100% 80%,
+            94% 100%,
+            0 100%,
+            0 18%
+        );
+    }
+
+    .jq-bharath .trusted-inner {
+        padding: 42px 25px 32px;
+    }
+
+    .jq-bharath .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 22px 35px;
+    }
+
+    .jq-bharath .hero {
+        grid-template-columns: 1fr;
+        margin-top: 55px;
+    }
+
+    .jq-bharath .hero-content {
+        order: 1;
+    }
+
+    .jq-bharath .hero-visual {
+        order: 2;
+        height: auto;
+        margin-top: 35px;
+    }
+
+    .jq-bharath .hero-visual img {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    .jq-bharath .hero h1 {
+        font-size: 43px;
+    }
+}
+
+@media (max-width: 520px) {
+    .jq-bharath .trusted,
+    .jq-bharath .hero {
+        width: calc(100% - 32px);
+    }
+
+    .jq-bharath .trusted-inner {
+        padding: 40px 20px 28px;
+    }
+
+    .jq-bharath .trusted-title {
+        font-size: 14px;
+    }
+
+    .jq-bharath .logos {
+        gap: 18px 24px;
+    }
+
+    .jq-bharath .logo {
+        transform: scale(0.75);
+        transform-origin: center;
+    }
+
+    .jq-bharath .hero {
+        margin-top: 45px;
+    }
+
+    .jq-bharath .hero h1 {
+        font-size: 38px;
+        letter-spacing: -1.8px;
+    }
+
+    .jq-bharath .description {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .jq-bharath .features {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .jq-bharath .post-btn {
+        width: 180px;
+    }
+}
+
+
+/* =========================================================
+   GUIDANCE + FOOTER - mohith
+========================================================= */
+
+.jq-mohith * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jq-mohith .guidance {
+    background: #202c2d;
+    color: #fff;
+    padding: 60px 55px 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.jq-mohith .guidance::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 230px;
+    height: 230px;
+    border: 1px solid rgba(255,255,255,.05);
+    border-radius: 50%;
+}
+
+.jq-mohith .guidance-heading {
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto 40px;
+}
+
+.jq-mohith .guidance-heading h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.jq-mohith .guidance-heading p {
+    font-size: 9px;
+    line-height: 1.7;
+    color: #aeb7b7;
+}
+
+.jq-mohith .guidance-content {
+    display: grid;
+    grid-template-columns: 1fr 230px 1fr;
+    align-items: center;
+    gap: 25px;
+}
+
+.jq-mohith .guidance-card h3 {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.jq-mohith .guidance-card p {
+    font-size: 9px;
+    line-height: 1.7;
+    color: #aeb7b7;
+}
+
+.jq-mohith .expert-image {
+    display: flex;
+    justify-content: center;
+}
+
+.jq-mohith .expert-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #fff;
+}
+
+.jq-mohith .footer {
+    background: #202c2d;
+    color: #fff;
+    padding: 45px 55px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 2fr;
+    gap: 35px;
+}
+
+.jq-mohith .footer-logo {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.jq-mohith .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.jq-mohith .footer h4 {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.jq-mohith .footer-column a {
+    color: #9fa8a8;
+    text-decoration: none;
+    font-size: 8px;
+}
+
+.jq-mohith .newsletter p {
+    font-size: 8px;
+    color: #9fa8a8;
+    margin-bottom: 10px;
+}
+
+.jq-mohith .subscribe {
+    height: 34px;
+    display: flex;
+    background: #fff;
+    border-radius: 18px;
+    padding: 3px;
+}
+
+.jq-mohith .subscribe input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 8px;
+}
+
+.jq-mohith .subscribe button {
+    border: none;
+    background: #202c2d;
+    color: #fff;
+    border-radius: 15px;
+    padding: 0 12px;
+    font-size: 7px;
+}
+
+@media (max-width: 800px) {
+    .jq-mohith .guidance {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .jq-mohith .guidance-content {
+        grid-template-columns: 1fr 180px 1fr;
+    }
+
+    .jq-mohith .expert-image img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 600px) {
+    .jq-mohith .guidance {
+        padding: 45px 20px;
+    }
+
+    .jq-mohith .guidance-heading h2 {
+        font-size: 24px;
+    }
+
+    .jq-mohith .guidance-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .jq-mohith .expert-image {
+        order: -1;
+    }
+
+    .jq-mohith .expert-image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .jq-mohith .footer {
+        padding: 40px 20px;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .jq-mohith .footer-logo {
+        grid-column: 1 / -1;
+    }
+
+    .jq-mohith .newsletter {
+        grid-column: 1 / -1;
+    }
+}
+
+
+/* =========================================================
+   FEATURED - aishwarya
+========================================================= */
+
+.jq-aishwarya * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jq-aishwarya .opportunities {
+    padding: 65px 55px;
+    background: #fff;
+}
+
+.jq-aishwarya .opportunity-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.jq-aishwarya .opportunity-header h2 {
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.jq-aishwarya .view-btn {
+    border: none;
+    background: #202c2d;
+    color: #fff;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.jq-aishwarya .job-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.jq-aishwarya .job-card {
+    min-height: 170px;
+    border: 1px solid #e5e7e7;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+}
+
+.jq-aishwarya .job-type {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 4px 7px;
+    background: #f2f4f4;
+    border-radius: 10px;
+    font-size: 7px;
+}
+
+.jq-aishwarya .job-company {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #f2f4f4;
+    margin-bottom: 18px;
+}
+
+.jq-aishwarya .job-card h3 {
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+.jq-aishwarya .job-card p {
+    font-size: 8px;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.jq-aishwarya .job-tag {
+    display: inline-block;
+    font-size: 7px;
+    padding: 4px 8px;
+    background: #edf5ef;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .jq-aishwarya .opportunities {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .jq-aishwarya .job-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .jq-aishwarya .opportunities {
+        padding: 45px 20px;
+    }
+
+    .jq-aishwarya .opportunity-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .jq-aishwarya .opportunity-header h2 {
+        font-size: 24px;
+    }
+
+    .jq-aishwarya .job-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .jq-aishwarya .job-card {
+        min-height: 155px;
+    }
+}
+
+
+/* =========================================================
+   SINGLE PAGE
+========================================================= */
+
+@media (max-width: 900px) {
+    .jobquest-page {
+        width: 100%;
+    }
+}
