@@ -1,5 +1,5 @@
 /* =========================================================
-   JOBQUEST - SINGLE STATIC PAGE
+   GLOBAL
 ========================================================= */
 
 * {
@@ -28,28 +28,20 @@ body {
     background: #ffffff;
 }
 
-.jq-hero,
-.jq-sahana,
-.jq-bharath,
-.jq-mohith,
-.jq-aishwarya {
-    width: 100%;
-    display: block;
-}
-
-img {
-    max-width: 100%;
-}
-
 
 /* =========================================================
-   HERO - hero-section
+   HERO-SECTION / HERO.CSS
 ========================================================= */
 
 .jq-hero * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.jq-hero {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
 }
 
 .jq-hero .navbar {
@@ -271,6 +263,7 @@ img {
 }
 
 @media (max-width: 900px) {
+
     .jq-hero .navbar {
         padding: 4%;
     }
@@ -316,6 +309,7 @@ img {
 }
 
 @media (max-width: 600px) {
+
     .jq-hero .navbar {
         height: auto;
         padding: 20px;
@@ -352,14 +346,8 @@ img {
 
 
 /* =========================================================
-   EXPLORE - sahana
+   SAHANA / EXPLORE.CSS
 ========================================================= */
-
-.jq-sahana * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .jq-sahana .explore-career {
     padding: 70px 5% 80px;
@@ -476,6 +464,7 @@ img {
 }
 
 @media (max-width: 900px) {
+
     .jq-sahana .career-cards {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -500,6 +489,7 @@ img {
 }
 
 @media (max-width: 600px) {
+
     .jq-sahana .explore-career {
         padding: 50px 6%;
     }
@@ -536,13 +526,13 @@ img {
 
 
 /* =========================================================
-   COMPANIES / RECRUITMENT - bharath
+   BHARATH / COMPANIES.CSS
 ========================================================= */
 
-.jq-bharath * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.jq-bharath {
+    font-family: "Inter", Arial, sans-serif;
+    background: #ffffff;
+    color: #111111;
 }
 
 .jq-bharath .page {
@@ -605,49 +595,16 @@ img {
     gap: 10px;
 }
 
-.jq-bharath .apple-symbol {
-    width: 31px;
-    height: 34px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 37px;
-    position: relative;
-}
-
-.jq-bharath .apple-symbol::after {
-    content: "";
-    position: absolute;
-    width: 9px;
-    height: 5px;
-    background: #fff;
-    border-radius: 100% 0;
-    top: 0;
-    right: 2px;
-    transform: rotate(-25deg);
-}
-
 .jq-bharath .att-logo {
     font-size: 27px;
     font-weight: 600;
     gap: 9px;
 }
 
-.jq-bharath .att-symbol {
-    font-size: 39px;
-    font-weight: 400;
-}
-
 .jq-bharath .meta-logo {
     font-size: 31px;
     font-weight: 500;
     gap: 7px;
-}
-
-.jq-bharath .meta-symbol {
-    font-size: 45px;
-    font-weight: 400;
-    transform: translateY(-2px);
 }
 
 .jq-bharath .mcd-logo {
@@ -762,6 +719,7 @@ img {
 }
 
 @media (max-width: 1100px) {
+
     .jq-bharath .trusted,
     .jq-bharath .hero {
         width: calc(100% - 10%);
@@ -799,6 +757,7 @@ img {
 }
 
 @media (max-width: 800px) {
+
     .jq-bharath .trusted {
         height: auto;
         min-height: 180px;
@@ -850,6 +809,7 @@ img {
 }
 
 @media (max-width: 520px) {
+
     .jq-bharath .trusted,
     .jq-bharath .hero {
         width: calc(100% - 32px);
@@ -898,13 +858,13 @@ img {
 
 
 /* =========================================================
-   GUIDANCE + FOOTER - mohith
+   MOHITH / GUIDANCE.CSS
 ========================================================= */
 
-.jq-mohith * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.jq-mohith {
+    font-family: "Inter", sans-serif;
+    background: #929fa0;
+    color: #111;
 }
 
 .jq-mohith .guidance {
@@ -1038,6 +998,7 @@ img {
 }
 
 @media (max-width: 800px) {
+
     .jq-mohith .guidance {
         padding-left: 30px;
         padding-right: 30px;
@@ -1054,6 +1015,7 @@ img {
 }
 
 @media (max-width: 600px) {
+
     .jq-mohith .guidance {
         padding: 45px 20px;
     }
@@ -1093,13 +1055,13 @@ img {
 
 
 /* =========================================================
-   FEATURED - aishwarya
+   AISHWARYA / FEATURED.CSS
 ========================================================= */
 
-.jq-aishwarya * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.jq-aishwarya {
+    font-family: "Inter", sans-serif;
+    background: #929fa0;
+    color: #111;
 }
 
 .jq-aishwarya .opportunities {
@@ -1185,6 +1147,7 @@ img {
 }
 
 @media (max-width: 800px) {
+
     .jq-aishwarya .opportunities {
         padding-left: 30px;
         padding-right: 30px;
@@ -1196,6 +1159,7 @@ img {
 }
 
 @media (max-width: 600px) {
+
     .jq-aishwarya .opportunities {
         padding: 45px 20px;
     }
@@ -1215,16 +1179,5 @@ img {
 
     .jq-aishwarya .job-card {
         min-height: 155px;
-    }
-}
-
-
-/* =========================================================
-   SINGLE PAGE
-========================================================= */
-
-@media (max-width: 900px) {
-    .jobquest-page {
-        width: 100%;
     }
 }
