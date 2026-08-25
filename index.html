@@ -4,53 +4,539 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JobQuest</title>
-    <link rel="stylesheet" href="single-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <main class="jobquest-page">
+<main class="jobquest-page">
 
-        <!-- MOHITH / HERO -->
-        <iframe
-            src="hero-section/hero.html"
-            class="hero-section"
-            title="JobQuest Hero">
-        </iframe>
+    <!-- HERO SECTION - hero-section -->
+    <section class="jq-hero">
+        <header class="navbar">
+            <div class="logo">
+                <div class="logo1">
+                    <img src="hero-section/images/logo.png" alt="">
+                </div>
+                JobQuest
+            </div>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Jobs</a>
+                <a href="#">Companies</a>
+                <a href="#">Community</a>
+            </nav>
+
+            <div class="nav-right">
+                <button class="search-btn">🔍</button>
+                <button class="apply-btn">Apply Today</button>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="small-text">Find Your Match</p>
+                <br><br>
+
+                <h1>Unlock Your Next<br>Career Move</h1>
+
+                <img src="hero-section/images/image1.png" alt="" class="lines">
+
+                <p class="hero-description">
+                    Explore thousands of opportunities tailored to your
+                    skills and experience. Connect with top employers
+                    and take the next step in your career journey
+                    with confidence.
+                </p>
+
+                <div class="email-box">
+                    <input type="email" placeholder="Your email address">
+                    <button>Get Started</button>
+                </div>
+
+                <div class="members">
+                    <div class="p-images">
+                        <img src="hero-section/images/user1.png" alt="users">
+                        <img src="hero-section/images/user2.png" alt="users">
+                        <img src="hero-section/images/user3.png" alt="users">
+                    </div>
+
+                    <div class="rating">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>Trusted by 10,000+ job seekers</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="hero-section/images/image.png" alt="Woman working on laptop">
+            </div>
+        </section>
+    </section>
 
 
-        <!-- SAHANA / EXPLORE -->
-        <iframe
-            src="sahana/explore.html"
-            class="explore-section"
-            title="Explore Career">
-        </iframe>
+    <!-- EXPLORE SECTION - sahana -->
+    <section class="jq-sahana">
+        <section class="explore-career">
+
+            <div class="explore-heading">
+                <h2>
+                    Explore Your Career Path And<br>
+                    Discover Opportunities
+                </h2>
+
+                <p>
+                    Whether you're looking to break into a new industry or advance
+                    in your current field, discover the perfect match for your
+                    professional journey.
+                </p>
+            </div>
+
+            <div class="career-cards">
+
+                <div class="career-card">
+                    <h3>Marketing</h3>
+                    <p>140 jobs available →</p>
+                </div>
+
+                <div class="career-card">
+                    <h3>Finance</h3>
+                    <p>325 jobs available →</p>
+                </div>
+
+                <div class="career-card">
+                    <h3>Technology</h3>
+                    <p>436 jobs available →</p>
+                </div>
+
+                <div class="career-card">
+                    <h3>Engineering</h3>
+                    <p>542 jobs available →</p>
+                </div>
+
+                <div class="career-card">
+                    <h3>Business</h3>
+                    <p>211 jobs available →</p>
+                </div>
+
+                <div class="career-card">
+                    <h3>Human Resource</h3>
+                    <p>346 jobs available →</p>
+                </div>
+
+            </div>
+
+            <div class="companies">
+
+                <div class="company">
+                    <img class="company-logo"
+                         src="sahana/assets/apple.png"
+                         alt="Apple">
+                    <span>Apple</span>
+                </div>
+
+                <div class="company">
+                    <img class="company-logo"
+                         src="sahana/assets/att.png"
+                         alt="AT&T">
+                    <span>AT&T</span>
+                </div>
+
+                <div class="company">
+                    <img class="company-logo"
+                         src="sahana/assets/meta.png"
+                         alt="Meta">
+                    <span>Meta</span>
+                </div>
+
+                <div class="company">
+                    <img class="company-logo"
+                         src="sahana/assets/mcdonalds.png"
+                         alt="McDonald's">
+                    <span>McDonald's</span>
+                </div>
+
+                <div class="company">
+                    <img class="company-logo"
+                         src="sahana/assets/sony.png"
+                         alt="SONY">
+                    <span>SONY</span>
+                </div>
+
+            </div>
+
+        </section>
+    </section>
 
 
-        <!-- BHARATH / COMPANIES -->
-        <iframe
-            src="bharath/companies.html"
-            class="companies-section"
-            title="Global Talent Recruitment">
-        </iframe>
+    <!-- COMPANIES / RECRUITMENT - bharath -->
+    <section class="jq-bharath">
+        <main class="page">
+
+            <section class="trusted">
+                <div class="trusted-inner">
+
+                    <p class="trusted-title">
+                        Trusted by the best companies
+                    </p>
+
+                    <div class="logos">
+
+                        <div class="logo apple-logo">
+                            Apple
+                        </div>
+
+                        <div class="logo att-logo">
+                            AT&amp;T
+                        </div>
+
+                        <div class="logo meta-logo">
+                            Meta
+                        </div>
+
+                        <div class="logo mcd-logo">
+                            McDonald's
+                        </div>
+
+                        <div class="logo sony-logo">
+                            SONY
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="hero">
+
+                <div class="hero-content">
+
+                    <h1>
+                        Reach Top Talent<br>
+                        Worldwide
+                    </h1>
+
+                    <p class="description">
+                        Expand Your Search And Attract Skilled Professionals From Around The Globe.<br>
+                        Our Platform Makes It Easy To Post Job Listings, Review Applications, And<br>
+                        Manage Your Recruitment Process Efficiently.
+                    </p>
+
+                    <div class="features">
+
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Global Reach</span>
+                        </div>
+
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Advanced Filtering</span>
+                        </div>
+
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Easy Posting</span>
+                        </div>
+
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Analytics &amp; Insights</span>
+                        </div>
+
+                    </div>
+
+                    <button class="post-btn">
+                        Post a Job
+                    </button>
+
+                </div>
+
+                <div class="hero-visual">
+                    <img
+                        src="bharath/photo.png"
+                        alt="Professional using a laptop with global talent network">
+                </div>
+
+            </section>
+
+        </main>
+    </section>
 
 
-        <!-- MOHITH / GUIDANCE + FOOTER -->
-        <iframe
-            src="mohith/guidance.html"
-            class="guidance-section"
-            title="Guidance and Footer">
-        </iframe>
+    <!-- GUIDANCE + FOOTER - mohith -->
+    <section class="jq-mohith">
+
+        <section class="guidance">
+
+            <div class="guidance-heading">
+
+                <h2>
+                    Guidance from Industry Experts
+                </h2>
+
+                <p>
+                    Gain valuable insights and practical tips from seasoned
+                    professionals who understand what it takes to succeed.
+                </p>
+
+            </div>
+
+            <div class="guidance-content">
+
+                <div class="guidance-card">
+
+                    <h3>
+                        Explore Top Companies
+                    </h3>
+
+                    <p>
+                        Discover and browse featured companies,
+                        understand their culture and find opportunities
+                        that match your career goals.
+                    </p>
+
+                </div>
+
+                <div class="expert-image">
+
+                    <img
+                        src="mohith/user3.png"
+                        alt="Industry expert">
+
+                </div>
+
+                <div class="guidance-card">
+
+                    <h3>
+                        Understand Company Cultures
+                    </h3>
+
+                    <p>
+                        Dive into company profiles to learn more about
+                        their values, work environment and opportunities.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
-        <!-- AISHWARYA / FEATURED -->
-        <iframe
-            src="aishwarya/featured.html"
-            class="featured-section"
-            title="Featured Opportunities">
-        </iframe>
+        <footer class="footer">
 
-    </main>
+            <div class="footer-logo">
+                ✦ JobQuest
+            </div>
+
+            <div class="footer-column">
+
+                <h4>About</h4>
+
+                <a href="#">Companies</a>
+                <a href="#">Pricing</a>
+                <a href="#">Terms</a>
+                <a href="#">Advice</a>
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Resources</h4>
+
+                <a href="#">Guide</a>
+                <a href="#">Updates</a>
+                <a href="#">Contact Us</a>
+
+            </div>
+
+            <div class="newsletter">
+
+                <h4>
+                    Get job notifications
+                </h4>
+
+                <p>
+                    Get the latest opportunities directly in your inbox.
+                </p>
+
+                <div class="subscribe">
+
+                    <input
+                        type="email"
+                        placeholder="Your email">
+
+                    <button>
+                        Subscribe
+                    </button>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </section>
+
+
+    <!-- FEATURED OPPORTUNITIES - aishwarya -->
+    <section class="jq-aishwarya">
+
+        <section class="opportunities">
+
+            <div class="opportunity-header">
+
+                <div>
+                    <h2>
+                        Featured Opportunities
+                        <br>
+                        For You
+                    </h2>
+                </div>
+
+                <button class="view-btn">
+                    View All Jobs →
+                </button>
+
+            </div>
+
+            <div class="job-grid">
+
+                <div class="job-card">
+
+                    <span class="job-type">
+                        Full Time
+                    </span>
+
+                    <div class="job-company">
+                        ◆
+                    </div>
+
+                    <h3>
+                        Brand Designer
+                    </h3>
+
+                    <p>
+                        Dropbox · San Francisco, US
+                    </p>
+
+                    <span class="job-tag">
+                        Design
+                    </span>
+
+                </div>
+
+
+                <div class="job-card">
+
+                    <span class="job-type">
+                        Full Time
+                    </span>
+
+                    <div class="job-company">
+                        ●
+                    </div>
+
+                    <h3>
+                        Email Marketing
+                    </h3>
+
+                    <p>
+                        HubSpot · Berlin, Germany
+                    </p>
+
+                    <span class="job-tag">
+                        Marketing
+                    </span>
+
+                </div>
+
+
+                <div class="job-card">
+
+                    <span class="job-type">
+                        Full Time
+                    </span>
+
+                    <div class="job-company">
+                        ◉
+                    </div>
+
+                    <h3>
+                        Visual Designer
+                    </h3>
+
+                    <p>
+                        Dropbox · Berlin, Germany
+                    </p>
+
+                    <span class="job-tag">
+                        Design
+                    </span>
+
+                </div>
+
+
+                <div class="job-card">
+
+                    <span class="job-type">
+                        Full Time
+                    </span>
+
+                    <div class="job-company">
+                        ◈
+                    </div>
+
+                    <h3>
+                        Lead Designer
+                    </h3>
+
+                    <p>
+                        Canva · Toronto, Canada
+                    </p>
+
+                    <span class="job-tag">
+                        Design
+                    </span>
+
+                </div>
+
+
+                <div class="job-card">
+
+                    <span class="job-type">
+                        Full Time
+                    </span>
+
+                    <div class="job-company">
+                        ○
+                    </div>
+
+                    <h3>
+                        Brand Strategist
+                    </h3>
+
+                    <p>
+                        Spotify · Paris, France
+                    </p>
+
+                    <span class="job-tag">
+                        Marketing
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+</main>
 
 </body>
 </html>
